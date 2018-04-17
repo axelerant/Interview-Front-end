@@ -1,0 +1,9 @@
+uuid: f43987b1-b690-45ac-b516-81b65e812ad5
+langcode: en
+status: true
+dependencies: {  }
+id: slideshow
+label: Slideshow
+icon_uuid: null
+description: 'a new Paragraphs bundle to host the created "slide" paragraph type'
+behavior_plugins: {  }

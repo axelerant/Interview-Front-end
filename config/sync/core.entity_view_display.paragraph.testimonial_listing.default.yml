@@ -3,20 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.testimonial_listing.field_testimonials
     - paragraphs.paragraphs_type.testimonial_listing
 id: paragraph.testimonial_listing.default
 targetEntityType: paragraph
 bundle: testimonial_listing
 mode: default
-content:
-  field_testimonials:
-    weight: 0
-    label: above
-    settings:
-      view_mode: teaser
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
+content: {  }
 hidden: {  }

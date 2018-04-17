@@ -1,0 +1,25 @@
+uuid: 3a704ea1-4781-4549-b00a-f5cabec618af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testimonial_slides.field_testimonials
+    - paragraphs.paragraphs_type.testimonial_slides
+id: paragraph.testimonial_slides.default
+targetEntityType: paragraph
+bundle: testimonial_slides
+mode: default
+content:
+  field_testimonials:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

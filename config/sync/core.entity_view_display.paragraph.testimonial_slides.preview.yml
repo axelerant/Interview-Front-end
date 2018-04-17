@@ -1,0 +1,23 @@
+uuid: 31c74d1c-d570-4dc9-928a-d044be3e66c5
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.testimonial_slides.field_testimonials
+    - paragraphs.paragraphs_type.testimonial_slides
+id: paragraph.testimonial_slides.preview
+targetEntityType: paragraph
+bundle: testimonial_slides
+mode: preview
+content:
+  field_testimonials:
+    weight: 0
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

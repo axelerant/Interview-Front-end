@@ -1,0 +1,40 @@
+uuid: f5336ce2-dab8-4531-933b-41cd91207713
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slideshow.field_slides
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - slick_paragraphs
+id: paragraph.slideshow.default
+targetEntityType: paragraph
+bundle: slideshow
+mode: default
+content:
+  field_slides:
+    type: slick_paragraphs_vanilla
+    weight: 0
+    label: above
+    settings:
+      optionset: custom
+      skin: default
+      view_mode: default
+      cache: 0
+      current_view_mode: default
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      skin_arrows: ''
+      skin_dots: ''
+      style: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

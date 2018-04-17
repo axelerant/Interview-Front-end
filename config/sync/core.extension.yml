@@ -1,6 +1,7 @@
 module:
   automated_cron: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -8,11 +9,12 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   contact: 0
   contact_block: 0
   contextual: 0
   datetime: 0
-  dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -33,6 +35,11 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  slick: 0
+  slick_extras: 0
+  slick_paragraphs: 0
+  slick_ui: 0
+  slick_views: 0
   system: 0
   taxonomy: 0
   text: 0

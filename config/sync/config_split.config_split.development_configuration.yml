@@ -1,0 +1,17 @@
+uuid: 192de159-5cf5-44c8-b84b-e2046c386635
+langcode: en
+status: true
+dependencies: {  }
+id: development_configuration
+label: 'Development Configuration'
+folder: ../config/dev
+module:
+  dblog: 0
+  devel: 0
+  devel_generate: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

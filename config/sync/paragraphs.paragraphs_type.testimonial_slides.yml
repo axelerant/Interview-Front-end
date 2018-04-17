@@ -1,0 +1,9 @@
+uuid: 618f69db-c005-41bb-9083-67f1fa7c70e4
+langcode: en
+status: true
+dependencies: {  }
+id: testimonial_slides
+label: Slide
+icon_uuid: null
+description: 'Display testimonial as slides'
+behavior_plugins: {  }

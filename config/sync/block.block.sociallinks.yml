@@ -11,7 +11,7 @@ dependencies:
 id: sociallinks
 theme: company
 region: footer
-weight: 0
+weight: -2
 provider: null
 plugin: 'system_menu_block:social-links'
 settings:
@@ -21,4 +21,9 @@ settings:
   label_display: '0'
   level: 1
   depth: 0
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: e0369393-df7a-4697-ab4d-f75503bb75db
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aacbc0ad-efb2-4762-961c-c9b87762cc21'
+  module:
+    - block_content
+    - system
+  theme:
+    - company
+id: copyrights
+theme: company
+region: footer
+weight: -3
+provider: null
+plugin: 'block_content:aacbc0ad-efb2-4762-961c-c9b87762cc21'
+settings:
+  id: 'block_content:aacbc0ad-efb2-4762-961c-c9b87762cc21'
+  label: Copyrights
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+    context_mapping: {  }

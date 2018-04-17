@@ -1,0 +1,22 @@
+uuid: 4c883984-11ed-40ad-88f3-c245fdb1ded4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testimonial_slides.field_testimonials
+    - paragraphs.paragraphs_type.testimonial_slides
+id: paragraph.testimonial_slides.default
+targetEntityType: paragraph
+bundle: testimonial_slides
+mode: default
+content:
+  field_testimonials:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: testimonial
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

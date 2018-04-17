@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.feature_section.field_features_description
     - field.field.paragraph.feature_section.field_features_image
     - field.field.paragraph.feature_section.field_features_title
+    - image.style.large
     - paragraphs.paragraphs_type.feature_section
   module:
     - image
@@ -25,7 +26,7 @@ content:
     weight: 2
     label: above
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image

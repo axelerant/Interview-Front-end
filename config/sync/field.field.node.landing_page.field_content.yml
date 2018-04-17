@@ -8,7 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.article_listing
     - paragraphs.paragraphs_type.feature_section
     - paragraphs.paragraphs_type.services_listing
-    - paragraphs.paragraphs_type.testimonial_listing
+    - paragraphs.paragraphs_type.slideshow
   module:
     - entity_reference_revisions
 id: node.landing_page.field_content
@@ -29,21 +29,27 @@ settings:
       article_listing: article_listing
       services_listing: services_listing
       feature_section: feature_section
-      testimonial_listing: testimonial_listing
+      slideshow: slideshow
     target_bundles_drag_drop:
       icon_with_text:
-        weight: 3
+        weight: -15
         enabled: false
       article_listing:
         enabled: true
-        weight: 4
+        weight: -14
       services_listing:
         enabled: true
-        weight: 4
+        weight: -13
       feature_section:
         enabled: true
-        weight: 6
-      testimonial_listing:
+        weight: -12
+      slideshow:
         enabled: true
-        weight: 10
+        weight: -11
+      testimonial_slides:
+        weight: -10
+        enabled: false
+      testimonial_listing:
+        weight: -9
+        enabled: false
 field_type: entity_reference_revisions

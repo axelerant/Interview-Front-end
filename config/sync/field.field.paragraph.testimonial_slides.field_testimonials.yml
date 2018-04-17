@@ -1,19 +1,19 @@
-uuid: 74debedb-5c58-415a-9406-fa56b79cd26a
+uuid: 992a2590-7107-4a7f-bd65-621aa61d4453
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_testimonials
     - node.type.testimonial
-    - paragraphs.paragraphs_type.testimonial_listing
-id: paragraph.testimonial_listing.field_testimonials
+    - paragraphs.paragraphs_type.testimonial_slides
+id: paragraph.testimonial_slides.field_testimonials
 field_name: field_testimonials
 entity_type: paragraph
-bundle: testimonial_listing
+bundle: testimonial_slides
 label: Testimonials
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

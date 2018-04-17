@@ -1,0 +1,49 @@
+uuid: a601f910-9fd4-40f3-b031-52c41a468cba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slides
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.testimonial_slides
+  module:
+    - entity_reference_revisions
+id: paragraph.slideshow.field_slides
+field_name: field_slides
+entity_type: paragraph
+bundle: slideshow
+label: Slides
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      testimonial_slides: testimonial_slides
+    target_bundles_drag_drop:
+      slideshow:
+        weight: 8
+        enabled: false
+      article_listing:
+        weight: 9
+        enabled: false
+      feature_section:
+        weight: 10
+        enabled: false
+      icon_with_text:
+        weight: 11
+        enabled: false
+      services_listing:
+        weight: 12
+        enabled: false
+      testimonial_listing:
+        weight: 13
+        enabled: false
+      testimonial_slides:
+        enabled: true
+        weight: 14
+field_type: entity_reference_revisions

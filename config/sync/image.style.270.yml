@@ -1,0 +1,15 @@
+uuid: 93dfee59-8ab9-441d-aeaf-f7437d240aae
+langcode: en
+status: true
+dependencies: {  }
+name: '270'
+label: 'Banner 270'
+effects:
+  c6129291-2fe6-4031-9ecc-e6a333025a17:
+    uuid: c6129291-2fe6-4031-9ecc-e6a333025a17
+    id: image_scale
+    weight: 1
+    data:
+      width: 270
+      height: null
+      upscale: false

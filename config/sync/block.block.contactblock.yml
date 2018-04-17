@@ -11,8 +11,8 @@ dependencies:
     - company
 id: contactblock
 theme: company
-region: content
-weight: 2
+region: footer
+weight: -4
 provider: null
 plugin: contact_block
 settings:
@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: '*'
     negate: false
     context_mapping: {  }
