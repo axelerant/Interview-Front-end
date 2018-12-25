@@ -6,8 +6,8 @@ module.exports = function watch(gulp, config, bs) {
       [config.styles.source, config.scripts.source],
       gulp.series(
         gulp.parallel('styles:lint', 'scripts:lint'),
-        gulp.parallel('styles', 'scripts'),
-      ),
+        gulp.parallel('styles', 'scripts')
+      )
     );
   });
 };
