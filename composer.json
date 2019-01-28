@@ -24,6 +24,7 @@
         "drupal/contact_block": "^1.4",
         "drupal/core": "~8.5",
         "drupal/paragraphs": "^1.2",
+        "drupal/webform": "^5.1",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
