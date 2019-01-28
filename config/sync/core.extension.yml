@@ -11,6 +11,7 @@ module:
   contact: 0
   contact_block: 0
   contextual: 0
+  copyright_block: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
