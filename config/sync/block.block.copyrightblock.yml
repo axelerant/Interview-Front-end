@@ -1,0 +1,23 @@
+uuid: a8995a78-4e27-44ee-a011-ac0753d96eee
+langcode: en
+status: true
+dependencies:
+  module:
+    - copyright_block
+  theme:
+    - company
+id: copyrightblock
+theme: company
+region: footer
+weight: 0
+provider: null
+plugin: copyrightblock
+settings:
+  id: copyrightblock
+  label: Copyrightblock
+  provider: copyright_block
+  label_display: '0'
+  copyright_text_prefix: ©
+  copyright_year: '2018'
+  copyright_text_suffix: 'Company. All rights Reserved.'
+visibility: {  }
