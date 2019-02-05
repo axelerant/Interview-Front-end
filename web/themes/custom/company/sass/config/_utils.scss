@@ -18,3 +18,12 @@
   white-space: nowrap;
   width: 1px;
 }
+
+@mixin font-size($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+@mixin font-family($font-weight) {
+  font-weight: $font-weight;
+  font-family: $font-mont;
+}
