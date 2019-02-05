@@ -1,0 +1,33 @@
+/* Contact Form */
+
+.contact-form {
+  position: absolute;
+  top: 184px;
+  left: 278px;
+  z-index: 154;
+  input[type = "text"],
+  input[type = "email"],
+  input[type = "number"] {
+    padding: 10px 0;
+    width: 89%;
+  }
+  input::-webkit-input-placeholder {
+    font-family: $font-mont;
+    color: $lighter-gray !important;
+    @include font-size(14px, 3.214);
+    text-align: left;
+  }
+  textarea::-webkit-input-placeholder {
+    font-family: $font-mont;
+    color: $lighter-gray !important;
+    @include font-size(14px, 3.214);
+    text-align: left;
+  }
+}
+textarea#edit-message {
+  padding: 10px 0;
+  width: 96.7%;
+}
+.webform-flex--container {
+  margin: 0;
+}

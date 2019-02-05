@@ -1,0 +1,47 @@
+/* Article Listing */
+
+.article_listing {
+  position: relative;
+  height: 592px;
+  margin-top: -10px;
+  background-color: $bg-lightest;
+  >p {
+    @include font-size(16px, 1.2);
+    @include font-family(500);
+    color: $darker;
+    z-index: 32;
+    text-align: center;
+    padding-top: 10px;
+  }
+  &-title {
+    @include font-size(28px, 1.2);
+    @include font-family(600);
+    color: $darker;
+    text-align: center;
+    z-index: 30;
+    padding-top: 80px;
+    }
+  }
+.field--name-field-articles {
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+}
+.layout__region--content {
+  margin-right: 37px;
+  a {
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: rgb(129, 115, 111);
+      line-height: 3;
+      text-decoration: none;
+    }
+    h2 {
+      @include font-size(18px, 1.333);
+      @include font-family(500);
+      color: $darker;
+      width: 264px;
+    }
+  }
+
+

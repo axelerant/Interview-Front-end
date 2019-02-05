@@ -1,0 +1,54 @@
+/* Service Listing */
+
+.layout-container {
+  position: relative;
+  min-height: 100%;
+}
+.layout-content {
+  overflow: hidden;
+  padding-bottom: 99px;
+  min-height: 100%;
+}
+.banner {
+  position: relative;
+  height: 700px;
+  margin-top: 147px;
+  .field--name-field-banner {
+    background-size: cover;
+    background-position: center center;
+    margin-top: -300px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .field--name-field-title {
+    @include font-size(36px, 1.2);
+    @include font-family(500);
+    color: $whiter;
+    text-align: center;
+    position: absolute;
+    top: 131px;
+    margin-left: 332px;
+    margin-right: 385px;
+    z-index: $z-5;
+  }
+  .field--name-field-icon-with-text {
+    position: relative;
+    background: url('../../images/rounded.png') no-repeat;
+    height: 183px;
+    width: 182px;
+    top: 249px;
+    text-align: center;
+    padding-top: 38px;
+    display: inline-block;
+    left: 390px;
+    margin-right: 22px;
+    @include font-size(16px, 1.2);
+    @include font-family(500);
+    color: $whiter;
+    text-align: center;
+    z-index: $z-16;
+    }
+  }
+

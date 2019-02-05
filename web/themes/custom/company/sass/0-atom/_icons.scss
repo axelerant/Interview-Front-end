@@ -1,0 +1,30 @@
+/* Social Media Icons */
+
+.social-media-links--platforms {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  li {
+    a {
+      > span.fa-facebook, .fa-linkedin {
+        background-color: $text-footer;
+        width: 16px;
+        height: 14px;
+        z-index: 233;
+        color: $darker;
+      }
+      >span.fa-twitter, .fa-envelope {
+        color: $text-footer;
+      }
+      .fa-2x {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+
+
+
+
+

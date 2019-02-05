@@ -1,0 +1,29 @@
+// Contact Form
+
+#block-contactus {
+  position: relative;
+  background: url('../../images/contact.png') no-repeat;
+  background-size: cover;
+  height: 482px;
+  h2 {
+    @include font-size(28px, 1.2);
+    @include font-family(600);
+    color: $white;
+    text-align: center;
+    position: absolute;
+    left: 480px;
+    top: 86px;
+    z-index: 152;
+  }
+  p {
+    @include font-size(20px, 1.5);
+    @include font-family(400);
+    color: $white;
+    text-align: center;
+    position: absolute;
+    left: 44px;
+    bottom: 250px;
+    z-index: 153;
+  }
+}
+

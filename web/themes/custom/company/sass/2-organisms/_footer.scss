@@ -1,0 +1,37 @@
+// Footer Section
+
+.footer {
+  position: relative;
+  height: 99px;
+  text-align: left;
+  margin-top: -107px;
+  clear: both;
+  background-image: -moz-linear-gradient( 90deg, rgb(24,21,20) 0%, rgb(45,40,38) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(24,21,20) 0%, rgb(45,40,38) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(24,21,20) 0%, rgb(45,40,38) 100%);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+    p {
+      font-size: 14px;
+      font-family: $font-mont;
+      color: $text-footer;
+      line-height: 1.2;
+      padding-top: 38px;
+      padding-left: 84px;
+      z-index: 181;
+    }
+  }
+
+// Social Media
+
+.block-social-media-links {
+  position: absolute;
+  top: 38px;
+  right: 82px;
+  >h2 {
+    @include font-size(14px, 1.2);
+    @include font-family(400);
+    color: $text-footer;
+    text-align: right;
+    margin-right: 130px;
+  }
+}

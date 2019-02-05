@@ -1,0 +1,23 @@
+/* Link */
+
+#block-getintouch {
+  position: absolute;
+  right: 81px;
+  bottom: 18px;
+    li {
+      a {
+        display: inline-block;
+        @include font-size(16px, 1.2);
+        @include font-family(500);
+        color: $whiter;
+        text-decoration: none;
+        padding: 20px 24px;
+        background-color: $bg-btn;
+        border-radius: 35px;
+        padding: 7px 29px;
+
+      }
+    }
+  }
+
+

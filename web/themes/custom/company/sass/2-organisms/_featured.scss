@@ -1,0 +1,38 @@
+/* Featured Section*/
+
+.featured {
+  display: flex;
+  height: 494px;
+  position: relative;
+  >.field--name-field-features-image {
+    margin-right: 70px;
+    margin-top: 79px;
+  }
+}
+  .field.field--name-field-features-title {
+    position: absolute;
+    top: 90px;
+    left: 91px;
+    width: 40%;
+    @include font-size(28px, 1.2);
+    @include font-family(600);
+    color: $darker;
+    text-align: left;
+  }
+  .field.field--name-field-features-description {
+    @include font-size(16px, 1.5);
+    font-family: $font-mont;
+    color: $darker;
+    text-align: left;
+    margin-left: 91px;
+    margin-right: 180px;
+    margin-top: 165px;
+    padding-bottom: 20px;
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+/* Header */
+
+.toolbar-horizontal {
+  margin-top: -79px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.header {
+  position: absolute;
+  left: 0px;
+  top: 79px;
+  width: 100%;
+  background-color: $bg-primary;
+  height: 68px;
+  z-index: 201;
+  h3 {
+    @include font-size(16px, 1.5);
+    font-family: $font-mont;
+    text-transform: uppercase;
+    color: $whiter;
+    margin-top: 22px;
+    margin-left: 83px;
+    z-index: 184;
+  }
+    span.logo {
+      color: $bg-btn;
+      @include font-size(16px, 1.5);
+      font-family: $font-mont;
+      text-transform: uppercase;
+    }
+  }
