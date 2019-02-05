@@ -1,9 +1,29 @@
-// Theme configuration.
-@import 'config/**/*';
-
 // Theme components based on Atomic Design.
-@import '00-atom/**/*';
-@import '01-molecules/**/*';
-@import '02-organisms/**/*';
-@import '03-templates/**/*';
-@import '04-pages/**/*';
+@import 'config/base';
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/utils';
+@import 'config/z-index';
+@import '0-atom/button';
+@import '0-atom/link';
+@import '0-atom/icons';
+@import '1-molecules/forms';
+@import '1-molecules/nav';
+@import '2-organisms/article-listing';
+@import '2-organisms/contact';
+@import '2-organisms/featured';
+@import '2-organisms/footer';
+@import '2-organisms/header';
+@import '2-organisms/service-listing';
+@import '2-organisms/testimonals';
+//@import '03-templates/**/*';
+//@import '04-pages/**/*';
+
+
+
+
+
+
+
+
+
