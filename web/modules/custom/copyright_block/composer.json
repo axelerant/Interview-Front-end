@@ -1,0 +1,14 @@
+{
+  "name": "drupal/copyright_block",
+  "type": "drupal-module",
+  "description": "Copyright Block",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/copyright_block",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/copyright_block",
+    "source": "http://cgit.drupalcode.org/copyright_block"
+  },
+  "require": { }
+}

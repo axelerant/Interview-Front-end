@@ -1,0 +1,5 @@
+name: 'Copyright Block'
+type: module
+description: 'Copyright Block'
+core: 8.x
+package: 'Custom'
