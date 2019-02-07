@@ -2,22 +2,36 @@
 
 #block-getintouch {
   position: absolute;
-  right: 81px;
-  bottom: 18px;
+  right: rem(81);
+  bottom: rem(18);
     li {
       a {
         display: inline-block;
-        @include font-size(16px, 1.2);
+        font-size: em(16);
         @include font-family(500);
         color: $whiter;
         text-decoration: none;
-        padding: 20px 24px;
         background-color: $bg-btn;
-        border-radius: 35px;
-        padding: 7px 29px;
-
+        border-radius: rem(32);
+        padding: rem(6) rem(15.3);
+        &:before {
+          content: 'text';
+          background: url('../../images/icon.png') no-repeat;
+          color: transparent;
+          position: relative;
+          top: rem(3);
+          left: rem(4);
+        }
+        @media (max-width: 456px) {
+          background: url('../../images/icon.png') no-repeat;
+          text-indent: em(-9999);
+          position: absolute;
+          font-size: em(0);
+          z-index: $z-139;
+          top: rem(-5.5);
+          left: rem(35);
+        }
       }
     }
   }
-
 

@@ -2,15 +2,20 @@
 
 .social-media-links--platforms {
   position: absolute;
-  top: -3px;
+  top: em(-3);
   right: 0;
+  @media (max-width: 456px) {
+    position: absolute;
+    top: em(-3);
+    right: em(-10);
+  }
   li {
     a {
       > span.fa-facebook, .fa-linkedin {
         background-color: $text-footer;
-        width: 16px;
-        height: 14px;
-        z-index: 233;
+        width: em(16);
+        height: em(14);
+        z-index: $z-233;
         color: $darker;
       }
       >span.fa-twitter, .fa-envelope {

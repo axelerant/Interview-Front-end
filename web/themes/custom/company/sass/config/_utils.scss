@@ -26,4 +26,5 @@
 @mixin font-family($font-weight) {
   font-weight: $font-weight;
   font-family: $font-mont;
+  line-height: 1.2;
 }

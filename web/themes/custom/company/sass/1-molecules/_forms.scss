@@ -2,32 +2,50 @@
 
 .contact-form {
   position: absolute;
-  top: 184px;
-  left: 278px;
-  z-index: 154;
+  top: rem(184);
+  left: rem(265);
+  z-index: $z-154;
+  @media (max-width: 456px) {
+    top: rem(245);
+    left: rem(22);
+  }
   input[type = "text"],
   input[type = "email"],
   input[type = "number"] {
-    padding: 10px 0;
+    padding: rem(10) 0;
     width: 89%;
+    @media (max-width: 456px) {
+      padding: rem(10) 0;
+      width: 100%;
+      margin-top: rem(8);
+    }
   }
   input::-webkit-input-placeholder {
     font-family: $font-mont;
     color: $lighter-gray !important;
-    @include font-size(14px, 3.214);
+    font-size: em(14);
+    line-height: 3.2;
     text-align: left;
   }
-  textarea::-webkit-input-placeholder {
-    font-family: $font-mont;
-    color: $lighter-gray !important;
-    @include font-size(14px, 3.214);
-    text-align: left;
+    textarea::-webkit-input-placeholder {
+      font-family: $font-mont;
+      color: $lighter-gray !important;
+      font-size: em(14);
+      line-height: 3.2;
+      text-align: left;
+    }
   }
-}
-textarea#edit-message {
-  padding: 10px 0;
-  width: 96.7%;
-}
-.webform-flex--container {
-  margin: 0;
-}
+  textarea#edit-message {
+    padding: rem(10) 0;
+    width: 96.7%;
+    @media (max-width: 456px) {
+      width: 100%;
+      margin-top: rem(8);
+    }
+  }
+  .webform-flex--container {
+    margin: 0;
+  }
+
+
+

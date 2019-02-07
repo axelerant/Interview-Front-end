@@ -1,30 +1,44 @@
 /* Header */
 
 .toolbar-horizontal {
-  margin-top: -79px;
+  margin-top: rem(-79);
   margin-right: 0;
   margin-left: 0;
+  @media (max-width: 456px) {
+    margin-top: rem(-79px);
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .header {
   position: absolute;
-  left: 0px;
-  top: 79px;
+  left: 0;
+  top: rem(79);
   width: 100%;
   background-color: $bg-primary;
-  height: 68px;
-  z-index: 201;
+  height: rem(68);
+  z-index: $z-201;
+  @media (max-width: 456px) {
+    top: 0;
+  }
   h3 {
-    @include font-size(16px, 1.5);
+    font-size: em(16px);
+    line-height: 1.5;
     font-family: $font-mont;
     text-transform: uppercase;
     color: $whiter;
-    margin-top: 22px;
-    margin-left: 83px;
-    z-index: 184;
+    margin-top: rem(21);
+    margin-left: rem(83);
+    z-index: $z-184;
+    @media (max-width: 456px) {
+      text-align: center;
+      margin-right: rem(65);
+    }
   }
     span.logo {
       color: $bg-btn;
-      @include font-size(16px, 1.5);
+      font-size: em(16);
+      line-height: 1.5;
       font-family: $font-mont;
       text-transform: uppercase;
     }

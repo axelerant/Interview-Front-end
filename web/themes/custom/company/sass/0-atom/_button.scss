@@ -1,17 +1,20 @@
 #edit-actions {
-    text-align: center;
-    input[type = "submit"] {
-      font-size: 16px;
-      font-family: $font-mont;
-      background-color: $bg-btn;
-      width: 120px;
-      height: 40px;
-      border: 1px solid $bg-btn;
-      border-radius: 30px;
-      color: $white;
-      line-height: 1.2;
-      z-index: 165;
+  text-align: center;
+  input[type = "submit"] {
+    font-size: em(16);
+    font-family: $font-mont;
+    background-color: $bg-btn;
+    width: rem(120);
+    height: rem(40);
+    border: 1px solid $bg-btn;
+    border-radius: rem(30);
+    color: $white;
+    line-height: 1.2;
+    z-index: $z-165;
+    @media (max-width: 456px) {
+      margin-top: rem(35);
     }
   }
+}
 
 

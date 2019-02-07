@@ -2,36 +2,61 @@
 
 .featured {
   display: flex;
-  height: 494px;
+  height: em(494);
   position: relative;
-  >.field--name-field-features-image {
-    margin-right: 70px;
-    margin-top: 79px;
+  @media (max-width: 456px) {
+    height: em(826);
+    display: flex;
+    flex-direction: column;
   }
-}
+  > .field--name-field-features-image {
+    margin-right: rem(70);
+    margin-top: rem(79);
+      @media (max-width: 456px) {
+        margin-top: 0;
+      }
+    img {
+      @media (max-width: 456px) {
+        max-width: 100%;
+        height: auto;
+        margin-left: rem(30);
+        margin-top: rem(20);
+      }
+    }
+  }
   .field.field--name-field-features-title {
     position: absolute;
-    top: 90px;
-    left: 91px;
+    top: rem(90);
+    left: rem(91);
     width: 40%;
-    @include font-size(28px, 1.2);
+    font-size: em(28);
     @include font-family(600);
     color: $darker;
     text-align: left;
+    @media (max-width: 456px) {
+      position: absolute;
+      top: rem(90);
+      left: rem(16);
+      width: 90%;
+    }
   }
   .field.field--name-field-features-description {
-    @include font-size(16px, 1.5);
+    font-size: em(16);
+    line-height: 1.5;
     font-family: $font-mont;
     color: $darker;
     text-align: left;
-    margin-left: 91px;
-    margin-right: 180px;
-    margin-top: 165px;
-    padding-bottom: 20px;
+    margin-left: rem(91);
+    margin-right: rem(180);
+    margin-top: rem(165);
+    padding-bottom: rem(20);
+    @media (max-width: 456px) {
+      margin-top: rem(210);
+      margin-left: rem(17);
+      width: 90%;
+    }
   }
-
-
-
+}
 
 
 

@@ -2,33 +2,43 @@
 
 #block-mainnavigation {
   position: absolute;
-  bottom: 26px;
-  right: 275px;
+  bottom: rem(0);
+  right: rem(275);
+  @media (max-width: 456px) {
+    left: rem(-16);
+    bottom: rem(18);
+  }
   ul {
     list-style-type: none;
+    span.sf-sub-indicator {
+      top: 55%;
+      font-size: em(10);
+    }
     li {
       float: right;
+      background: transparent;
       a {
         display: inline-block;
-        @include font-size(16px, 1.2);
+        font-size: em(16);
         @include font-family(500);
         color: $text-footer;
         text-align: left;
         text-decoration: none;
-        padding: 0px 22px;
+        padding: rem(11) rem(22);
         &:hover {
-          color: $text-footer;
-          @include font-size(14px, 3);
+          color: $whiter;
+          font-size: em(16);
+          line-height: 3;
           @include font-family(400);
           text-align: left;
+          background: transparent;
           }
-        &:active {
-          color: $whiter;
-        }
         }
       }
     }
   }
+
+
 
 
 
