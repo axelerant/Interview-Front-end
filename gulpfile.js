@@ -31,6 +31,18 @@ gulp.task('sass', () => {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('image', () => {
+  return gulp.src('src/image/*').pipe(gulp.dest('dist/assets/image'));
+});
+
+gulp.task('fonts', () => {
+  return gulp.src('src/fonts/*').pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('distjs', () => {
+  return gulp.src('src/dist/js/*').pipe(gulp.dest('dist/js'));
+});
+
 gulp.task('stylelint', () => {
   return gulp.src('src/sass/*.scss').pipe(
     stylelint({
@@ -66,7 +78,7 @@ gulp.task('browsersync', () => {
 });
 
 gulp.task('lint', ['stylelint', 'eslint']);
-gulp.task('build', ['twig', 'sass', 'babel']);
-gulp.task('server', ['browsersync']);
+gulp.task('build', ['twig', 'sass', 'babel', 'distjs', 'image', 'fonts']);
+gulp.task('server', ['browsersync', 'distjs', 'image', 'fonts']);
 
 gulp.task('default', ['lint', 'build']);
