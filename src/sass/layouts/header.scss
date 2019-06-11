@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+}
+.header-container {
+  background: $black-color;
+  display: flex;
+  padding: 6px 85px;
+  .company-logo {
+    width: 125px;
+    height: 35px;
+    margin: auto 0px;
+  }
+  .navbar-container {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    ul {
+      display: flex;
+      margin-right: 10px;
+      li {
+        a {
+          padding: 15px;
+          color: $grey-color;
+
+          &:hover,
+          &:focus,
+          &.is-active {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+}
+.get-in-touch-btn {
+  background: $orange-color;
+  color: $white-color;
+  padding: 5px 15px;
+  border-radius: 25px;
+  flex: 0 0 140px;
+  height: 30px;
+}
