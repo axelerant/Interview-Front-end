@@ -1,20 +1,52 @@
 a {
   text-decoration: none;
 }
-.header-container {
+#header {
   background: $black-color;
   display: flex;
+  align-items: center;
   padding: 6px 85px;
+  max-height: 76px;
+  overflow: hidden;
+  transition: all 0.3s ease;
   @media screen and (max-width: $max-sm-screen-size) {
     flex-direction: column;
-    padding: 12px 40px 5px 40px;
+    padding: 5px 20px 5px 20px;
   }
-  .company-logo {
-    width: 125px;
-    height: 35px;
-    margin: auto 0px;
+
+  .hamburger-logo-container {
     @media screen and (max-width: $max-sm-screen-size) {
-      margin: auto;
+      width: 100%;
+      display: flex;
+      margin-top: 8px;
+    }
+    #nav-hamburger {
+      display: none;
+      @media screen and (max-width: $max-sm-screen-size) {
+        display: block;
+        width: 55px;
+        position: relative;
+        padding: 8px 5px;
+        cursor: pointer;
+        span {
+          display: block;
+          height: 5px;
+          width: 70%;
+          margin: 5px auto;
+          background: $white-color;
+          border-radius: 6px;
+          opacity: 1;
+          left: 0;
+        }
+      }
+    }
+    .company-logo {
+      width: 125px;
+      height: 35px;
+      margin: auto 0px;
+      @media screen and (max-width: $max-sm-screen-size) {
+        margin: auto;
+      }
     }
   }
   .navbar-container {
@@ -25,6 +57,7 @@ a {
     @media screen and (max-width: $max-sm-screen-size) {
       margin-left: unset;
       justify-content: center;
+      width: 100%;
       .orange-btn {
         display: none;
       }
@@ -35,10 +68,13 @@ a {
       list-style: none;
       @media screen and (max-width: $max-sm-screen-size) {
         flex-direction: column;
+        width: 100%;
       }
       li {
         @media screen and (max-width: $max-sm-screen-size) {
           padding: 5px 0px;
+          text-align: center;
+          width: 100%;
         }
         a {
           padding: 15px;
@@ -47,6 +83,11 @@ a {
           &:focus,
           &.is-active {
             color: $white-color;
+          }
+          @media screen and (max-width: $max-sm-screen-size) {
+            padding: 10px 0px;
+            width: 100%;
+            display: inline-block;
           }
         }
       }

@@ -4,6 +4,10 @@
   padding: 25px 80px;
   align-items: center;
   background: $black-color;
+  @media screen and (max-width: $max-sm-screen-size) {
+    flex-direction: column;
+    padding: 25px 10px;
+  }
   .copyright-text {
     color: $light-grey-color;
   }

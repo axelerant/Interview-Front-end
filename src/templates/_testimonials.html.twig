@@ -1,6 +1,13 @@
 <div class="testimonials-container">
     <h3>Testimonials</h3>
-    {% include "_single_testimonial.html.twig" with {'client_name': 'Client 1', 'client_position': 'Position, ORG', 'client_avatar' : 'assets/images/default-avatar.png', 'content': 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. to generate Lorem Ipsum which looks reasonable.It uses a dictionary of over 200 Latin words.'} %}
-    {% include "_single_testimonial.html.twig" with {'client_name': 'Client 2', 'client_position': 'Position, ORG', 'client_avatar': 'assets/images/default-avatar.png', 'content': 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.It uses a dictionary of over 200 Latin words.'} %}
-    {% include "_single_testimonial.html.twig" with {'client_name': 'Client 3', 'client_position': 'Position, ORG', 'client_avatar': 'assets/images/default-avatar.png', 'content': 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.'} %}
+    <div class="testimonials-carousel">
+        {% include "_single_testimonial.html.twig" with {'client_name': 'Client 1', 'client_position': 'Position, ORG', 'client_avatar' : 'assets/images/default-avatar.png', 'content': 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. to generate Lorem Ipsum which looks reasonable.It uses a dictionary of over 200 Latin words.'} %}
+        {% include "_single_testimonial.html.twig" with {'client_name': 'Client 2', 'client_position': 'Position, ORG', 'client_avatar': 'assets/images/default-avatar.png', 'content': 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.It uses a dictionary of over 200 Latin words.'} %}
+        {% include "_single_testimonial.html.twig" with {'client_name': 'Client 3', 'client_position': 'Position, ORG', 'client_avatar': 'assets/images/default-avatar.png', 'content': 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.'} %}
+        <a class="carousel-next" onclick="changeSlides('next')"></a>
+        <a class="carousel-prev" onclick="changeSlides('prev')"></a>
+    </div>
 </div>
+{% block javascript %}
+    <script src="carousel.js"></script>
+{% endblock %} 

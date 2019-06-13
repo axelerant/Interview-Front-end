@@ -1,63 +1,113 @@
 .testimonials-container {
   background: $super-light-grey-color;
   padding: 50px 80px 70px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  @media screen and (max-width: $max-sm-screen-size) {
+    padding: 50px 25px 70px;
+  }
   > h3:first-child {
-    width: 100%;
     text-align: center;
     margin-bottom: 0px;
   }
-  .single-testimonial {
-    display: inline-block;
-    margin-right: 20px;
-    margin-top: 30px;
-    .content-block {
-      position: relative;
-      display: flex;
-      align-items: flex-start;
-      background: $white-color;
-      padding: 15px 30px 30px 30px;
-      border-radius: 20px;
-      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
-      margin-bottom: 20px;
-      max-width: 350px;
-      height: 231px;
-      > p {
-        overflow-y: scroll;
-        max-height: 100%;
-        word-wrap: break-word;
-      }
-    }
-    .content-block::before {
-      background-color: white;
-      content: '';
-      display: block;
-      height: 16px;
-      width: 23px;
-      position: absolute;
-      top: 222px;
-      margin-left: 34px;
-      -webkit-transform: rotate(38deg) skew(12deg);
-      transform: rotate(38deg) skew(12deg);
-      -webkit-box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.2);
-      box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    }
-    .client-info {
-      display: flex;
-      align-items: center;
-      > img {
-        border: 2px solid $white-color;
-        border-radius: 50px;
-        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
-        margin-right: 10px;
+  .testimonials-carousel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .carousel-next,
+    .carousel-prev {
+      display: none;
+      @media screen and (max-width: $max-sm-screen-size) {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: -37px;
         width: 50px;
         height: 50px;
+        background-image: url('assets/images/carousel-right-arrow.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: inset 0 0 0 2000px rgba(250, 250, 250, 0.2);
       }
-      h6,
-      p {
-        margin: 5px;
+    }
+    .carousel-next {
+      right: 10px;
+    }
+    .carousel-prev {
+      left: 10px;
+      transform: rotate(180deg);
+    }
+    @media screen and (max-width: $max-sm-screen-size) {
+      height: 350px;
+      display: block;
+      position: relative;
+      > .single-testimonial:nth-child(1) {
+        position: absolute;
+        right: 0px;
+      }
+      > .single-testimonial:nth-child(2) {
+        position: absolute;
+        right: -500px;
+      }
+      > .single-testimonial:nth-child(3) {
+        position: absolute;
+        right: -1000px;
+      }
+    }
+    .single-testimonial {
+      display: block;
+      max-width: 350px;
+      margin-right: 20px;
+      margin-top: 30px;
+      opacity: 1;
+      transition: all 0.4s ease;
+      @media screen and (max-width: $max-sm-screen-size) {
+        margin: 30px auto;
+      }
+      .content-block {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        background: $white-color;
+        padding: 15px 30px 30px 30px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
+        margin-bottom: 20px;
+        width: 100%;
+        height: 231px;
+        > p {
+          overflow-y: scroll;
+          max-height: 100%;
+          word-wrap: break-word;
+        }
+      }
+      .content-block::before {
+        background-color: white;
+        content: '';
+        display: block;
+        height: 16px;
+        width: 23px;
+        position: absolute;
+        top: 222px;
+        margin-left: 34px;
+        -webkit-transform: rotate(38deg) skew(12deg);
+        transform: rotate(38deg) skew(12deg);
+        -webkit-box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+      }
+      .client-info {
+        display: flex;
+        align-items: center;
+        > img {
+          border: 2px solid $white-color;
+          border-radius: 50px;
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
+          margin-right: 10px;
+          width: 50px;
+          height: 50px;
+        }
+        h6,
+        p {
+          margin: 5px;
+        }
       }
     }
   }

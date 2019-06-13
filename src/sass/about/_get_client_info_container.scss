@@ -3,7 +3,7 @@
   background-image: url('assets/images/get-client-info.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.93);
+  box-shadow: inset 0 0 0 2000px rgba(70, 70, 96, 0.93);
   display: flex;
   flex-direction: column;
   > h3 {
@@ -23,6 +23,10 @@
       padding: 8px;
       border-radius: 3px;
       border: 0px;
+      @media screen and (max-width: $max-sm-screen-size) {
+        margin: 10px 0px;
+        width: 100%;
+      }
     }
     textarea {
       margin: 10px 0px 20px 0px;
@@ -31,6 +35,9 @@
       border: 0px;
       border-radius: 3px;
       min-height: 100px;
+      @media screen and (max-width: $max-sm-screen-size) {
+        width: 100%;
+      }
     }
     > a {
       display: block;

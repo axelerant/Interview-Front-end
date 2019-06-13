@@ -1,13 +1,23 @@
 .about-section2 {
   background: $white-color;
-  display: flex;
   padding: 10px 80px;
+  display: flex;
+  @media screen and (max-width: $max-sm-screen-size) {
+    padding: 10px 25px 40px 25px;
+    flex-direction: column;
+  }
   .about-section2-info {
     flex: 1;
     padding-top: 70px;
     margin-right: 40px;
+    @media screen and (max-width: $max-sm-screen-size) {
+      margin-right: unset;
+    }
     h3 {
       max-width: 600px;
+      @media screen and (max-width: $max-sm-screen-size) {
+        margin-bottom: 40px;
+      }
     }
     p {
       max-width: 700px;
@@ -15,5 +25,6 @@
   }
   .world-map-image {
     flex: 1;
+    max-height: 400px;
   }
 }

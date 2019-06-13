@@ -13,6 +13,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 22px;
 }
 
 .orange-btn {
@@ -42,4 +45,16 @@ body {
     position: relative;
     top: 5px;
   }
+}
+
+.is-expanded {
+  max-height: 500px !important;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.fade-out {
+  opacity: 0 !important;
 }
