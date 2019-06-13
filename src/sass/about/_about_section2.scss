@@ -1,0 +1,19 @@
+.about-section2 {
+  background: $white-color;
+  display: flex;
+  padding: 10px 80px;
+  .about-section2-info {
+    flex: 1;
+    padding-top: 70px;
+    margin-right: 40px;
+    h3 {
+      max-width: 600px;
+    }
+    p {
+      max-width: 700px;
+    }
+  }
+  .world-map-image {
+    flex: 1;
+  }
+}

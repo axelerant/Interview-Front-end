@@ -1,5 +1,6 @@
 @import 'config/**/*.scss';
 @import 'layouts/header.scss';
+@import 'layouts/footer.scss';
 @import 'about/about.scss';
 
 html {
@@ -12,4 +13,33 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.orange-btn {
+  background-color: rgb(218, 57, 17);
+  color: $white-color;
+  padding: 5px 15px;
+  border-radius: 25px;
+  flex: 1 0 140px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  img {
+    width: 17px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+  }
+}
+
+.social-btn {
+  display: inline-block;
+  margin-right: 3px;
+  img {
+    width: 20px;
+    height: 18px;
+    border-radius: 4px;
+    position: relative;
+    top: 5px;
+  }
 }

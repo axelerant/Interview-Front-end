@@ -1,0 +1,13 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 80px;
+  align-items: center;
+  background: $black-color;
+  .copyright-text {
+    color: $light-grey-color;
+  }
+  .social-buttons-container {
+    color: $light-grey-color;
+  }
+}

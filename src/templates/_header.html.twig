@@ -15,7 +15,8 @@
                 <a class="nav-links" href="#">Blog</a>
             </li>
         </ul>
-        <a class="get-in-touch-btn" href="">Get in Touch</a>
+        {% include "_orange_button.html.twig" with {'button_text': 'Get in Touch', 'button_link': '#', 'button_image_src': 'assets/images/chat-icon.png'}%}
+        
     </div>
 </div>
 {% block javascript %}

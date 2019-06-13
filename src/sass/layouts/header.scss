@@ -5,20 +5,41 @@ a {
   background: $black-color;
   display: flex;
   padding: 6px 85px;
+  @media screen and (max-width: $max-sm-screen-size) {
+    flex-direction: column;
+    padding: 12px 40px 5px 40px;
+  }
   .company-logo {
     width: 125px;
     height: 35px;
     margin: auto 0px;
+    @media screen and (max-width: $max-sm-screen-size) {
+      margin: auto;
+    }
   }
   .navbar-container {
     float: right;
     display: flex;
     align-items: center;
     margin-left: auto;
+    @media screen and (max-width: $max-sm-screen-size) {
+      margin-left: unset;
+      justify-content: center;
+      .orange-btn {
+        display: none;
+      }
+    }
     ul {
       display: flex;
       margin-right: 10px;
+      list-style: none;
+      @media screen and (max-width: $max-sm-screen-size) {
+        flex-direction: column;
+      }
       li {
+        @media screen and (max-width: $max-sm-screen-size) {
+          padding: 5px 0px;
+        }
         a {
           padding: 15px;
           color: $light-grey-color;
@@ -31,12 +52,4 @@ a {
       }
     }
   }
-}
-.get-in-touch-btn {
-  background: $orange-color;
-  color: $white-color;
-  padding: 5px 15px;
-  border-radius: 25px;
-  flex: 0 0 140px;
-  height: 30px;
 }
