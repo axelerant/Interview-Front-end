@@ -1,6 +1,9 @@
 /* eslint-disable */
 const gulp = require('gulp');
 const twig = require('gulp-twig');
+//const data = require('gulp-data');
+//const path = require('path');
+//const fs = require('fs');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const glob = require('gulp-sass-glob');
@@ -13,6 +16,9 @@ const browserSync = require('browser-sync');
 gulp.task('twig', () => {
   return gulp
     .src('src/templates/*.html.twig')
+    //.pipe(data(function(file) {
+     // return JSON.parse(fs.readFileSync('src/data/' + path.basename(file.path) + '.json'));
+    //}))
     .pipe(twig())
     .pipe(rename('index.html'))
     .pipe(gulp.dest('dist'));
@@ -56,7 +62,10 @@ gulp.task('eslint', () => {
 gulp.task('browsersync', () => {
   browserSync.init({
     server: {
-      baseDir: './dist'
+      baseDir: './dist',
+      //browser: "google chrome",
+      //proxy: "localhost:3001",
+      //notify: false
     }
   });
   gulp.watch(

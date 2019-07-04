@@ -1,0 +1,19 @@
+.sections{ 
+    padding-top:60px;
+    padding-bottom:60px;
+}
+.h2{
+    font-size:24px;
+    margin-bottom:10px;
+}
+p{
+    line-height:1.6;
+}
+.grid--6-4{
+    grid-template-columns:auto 50%;
+    grid-column-gap:30px;
+}
+.contact{
+    background: #2a2b2c url(images/contact-backround.jpg) no-repeat;
+    background-size: cover;
+}

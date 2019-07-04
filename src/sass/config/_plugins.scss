@@ -1,3 +1,14 @@
-@import 'normalize.scss/normalize';
-@import 'sass-toolkit/stylesheets/toolkit/kickstart';
-@import 'breakpoint-sass/stylesheets/breakpoint';
+//@import 'normalize.scss/normalize';
+//@import 'sass-toolkit/stylesheets/toolkit/kickstart';
+//@import 'breakpoint-sass/stylesheets/breakpoint';
+@import 'fonts.scss'; // all Fonts
+@import 'reset.scss'; // All resset and override user agent stylesheet
+@import 'layout.scss'; // all layout related style like container, grid, flex
+@import 'header.scss'; // header style
+@import 'btn.scss';  // orange button component style
+@import 'section1.scss';  // section 1 styles
+@import 'sections.scss';  // section 1 styles
+@import 'testimonials.scss';  
+@import 'form.scss';  
+@import 'footer.scss';  
+@import 'media-queries.scss';  // Responsive media

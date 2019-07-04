@@ -1,0 +1,18 @@
+<header class="header" role="header">
+    <div class="container">
+        <div class="d-flex justify-between align-center">
+            <div id="js-menuToggle" class="hamburger" role="hamburger" aria-hidden="true">
+                <div class="hamburger__inner"><span class="hamburger__bar1"></span><span class="hamburger__bar2"></span><span class="hamburger__bar3"></span></div>
+            </div>
+            <div>
+                {% include "header/_logo.html.twig" %}
+            </div>
+            <nav class="nav d-flex align-center" role="navigation" aria-label="Main menu">
+                {% include "header/_nav.html.twig" %}
+                <div>
+                    <a href="" class="btn btn--a btn--icon btn--mobile-icon" aria-label="Get in touch"><img class="btn__icon" src="images/chat.svg" aria-hidden="true"><span>Get in touch</span></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,50 @@
+$color_1: inherit;
+$font_family_1: inherit;
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+}
+body, button, p {
+	margin: 0;
+}
+button {
+	cursor: pointer;
+	font-family: $font_family_1;
+	font-size: inherit;
+	background: none;
+	border-radius: 0;
+	outline: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: $color_1;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	li {
+		list-style: none;
+	}
+}
+img {
+	border: 0;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	margin: 0;
+	font-size: inherit;
+	
+}
+input, textarea {
+	font-family: $font_family_1;
+	font-size: inherit;
+	background: none;
+	border-radius: 0;
+	outline: 0;
+	padding: 0;
+	border: 1px solid;
+} 

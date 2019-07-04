@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Axelerant: Interview Frontend</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS -->
+</head>
+<body>
+    <!-- HEADER -->
+    {% include "_header.html.twig" %}
+    <!-- HEADER -->
+
+    <main class="main" role="main">
+        {% block content %}
+            <!-- SECTION 1 -->
+            {% include 'blocks/block1-banner.twig' %}
+            <!-- SECTION 1 -->
+            <!-- SECTION 2 -->
+            {% include 'blocks/block2-about.twig' %}
+            <!-- SECTION 2 -->
+            <!-- SECTION 3 -->
+            {% include 'blocks/block3-testimonials.twig' %}
+            <!-- SECTION 3 -->
+            <!-- SECTION 4 -->
+            {% include 'blocks/block4-contact.twig' %}
+            <!-- SECTION 4 -->
+        {% endblock %}
+    </main>
+
+    <!-- FOOTER -->
+    {% include "_footer.html.twig" %}
+    <!-- FOOTER -->
+
+    <!-- JS -->
+    <script src="main.js"></script> 
+    <!-- JS -->
+</body>

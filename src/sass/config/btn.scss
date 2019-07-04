@@ -1,0 +1,19 @@
+.btn{
+    background: #ee3b00;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius:100px;
+    border: none; 
+    text-transform: capitalize;
+}
+.btn:hover{
+    background:#e73a01;
+}
+.btn--a{
+    display: inline-block;
+}
+.btn--icon .btn__icon{
+    width:16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}

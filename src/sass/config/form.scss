@@ -1,0 +1,31 @@
+.form-max{
+    max-width: 804px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:34px;
+}
+.work-form{
+    margin:-10px;
+}
+.work-form__group {
+    width:33.333%;
+    padding:10px;
+}
+.work-form--mod4, .work-form--mod5{
+    width:100%;
+}
+.work-form__input{
+    width:100%;
+    background: #fff;
+    border: 1px solid #b9bbbb;
+    color: #857774;
+    padding:10px;
+    border-radius:4px;
+}
+.work-form__input--textarea{
+    height:105px;
+    resize:none;
+}
+.btn--big{
+    padding:12px 30px;
+}

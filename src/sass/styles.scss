@@ -1,11 +1,18 @@
-@import 'config/**/*.scss';
+//@import 'config/**/*.scss'; // all other style
+@import 'config/_plugins.scss'; // all other style
 
-html {
-  height: 100%;
-  font-size: 16px;
+$lucida_regular: 'lucida_sansregular', arial, verdana, sans-serif;
+//$lucida_bold: 'lucida_sansdemibold', arial, verdana, sans-serif;
+
+body{
+  font-family: $lucida_regular;
+  font-size:14px;
+  line-height:1.4;
+  color:#484340;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
-
-body {
-  font-size: 100%;
-  display: flex;
+p{
+    line-height:1.55;
 }

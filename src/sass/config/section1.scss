@@ -1,0 +1,48 @@
+$bg_cover: cover;
+
+/*** Section 1 ***/
+.banner{
+    background:#1f1f1f url(images/banner-image-large.jpg) no-repeat top center;
+    background-size: $bg_cover; 
+    min-height:685px;
+    min-height:91vh;
+    min-height: calc(100vh - 68px);
+    padding:40px 0;
+}
+.banner__title{
+    font-size:2.8rem;
+    max-width: 580px;
+    text-align: center;
+    line-height:1.15;
+    margin:80px auto 35px;
+    margin:11vh auto 35px;
+}
+.banner__services{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-column-gap:20px;
+    text-align: center;
+}
+.banner__services>a{
+    border:1px solid #47433f;
+    padding:35px 5px 45px;
+    transition: border-radius .2s;
+}
+.banner__services>a:hover{
+    border-radius:5px;
+}
+.banner_service-icon{
+    background:url(images/banner-serviecs.png) no-repeat;
+    width:74px;
+    height:67px;
+    display: block;
+    background-position:1px 1px;
+    margin:0 auto 17px;
+}
+.banner_service--icon2{
+    background-position:-74px 1px;
+}
+.banner_service--icon3{
+    background-position:-148px 1px;
+}
+/*** Section 1 ***/
