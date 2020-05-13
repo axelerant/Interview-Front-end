@@ -14,6 +14,8 @@ This exercise is to test your front-end skills. You have to take the following r
 
 #### Event Listing
 
+![](listing.png)
+
 - There is a search input on the top of the listing with placeholder - “SEARCH EVENTS”.
 - The events are listed in a grid of 4 columns (single column in mobile view).
 - Each event block has a name, image, date of the event, the number of seats available for the event and "Book Now" button.
@@ -25,7 +27,7 @@ This exercise is to test your front-end skills. You have to take the following r
 - If the seats are not available for the event, there should be no "Book Now" button on the event block. In place of "Book Now" button, "Sold Out" text is shown.
 
 #### Event Booking
-
+![](booking.png)
 - The header of the page should be the name of the event.
 - Below the header, the number of available seats is displayed with the label - "Number of available seats".
 - Below is the booking form that includes the following fields:
