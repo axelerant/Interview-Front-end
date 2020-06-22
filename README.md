@@ -51,6 +51,7 @@ This exercise is to test your front-end skills. You have to take the following r
 - Click on this button to open the sandbox  
   [![Edit axelerant-frontend-exercise](https://codesandbox.io/static/img/play-codesandbox.svg)](https://https://codesandbox.io/s/new?fontsize=14)
 - You can start working on the implementation as per the requirements
+- Make sure you write custom CSS instead of using frameworks like Bootstrap or Foundation.
 
 ### Brownie Points for:
 
